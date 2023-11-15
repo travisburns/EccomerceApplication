@@ -24,10 +24,7 @@ export default {
         danger: '#EF4444',  // Red
         info: '#3B82F6',  // Blue
         warning: '#FBBF24',  // Yellow
-        brown: {
-          500: '#8B4513', // Lighter brown
-          600: '#6D3811', // Darker brown
-        },
+        
 },
       screens: {
         '3xl': '1920px'
