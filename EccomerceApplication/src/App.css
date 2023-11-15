@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: 'Harrington';
+  src: url('./fonts/HARRINGT.TTF') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
