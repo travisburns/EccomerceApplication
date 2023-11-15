@@ -11,8 +11,8 @@ function App() {
   return (
     <>
     
-    <div class=" bg-gradient-to-b box-shadow-shadow-black">
-    <div className=' bg-gradient-to-b from-slate-950 to-slate-950 absolute inset-0'>
+    <div class=" bg-gradient-to-b box-shadow-shadow-black ">
+    <div className=' bg-gradient-to-b from-slate-950 to-slate-950  '>
     <Navbar />
     <Home />
 </div>
