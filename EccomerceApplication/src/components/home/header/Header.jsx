@@ -6,8 +6,11 @@ const Header = () => {
     <div className='mb-[3rem]'>
     <img src={headerImage} alt="" className='w-[100%] relative z-[0]'/>
     <h1 className='text-4xl font-bold text-yellow-100 text-shadow-mdtext-white text-[2rem] font-Harrington text-center z-[1] relative bottom-[10rem]'>Wiccan's Collection</h1>
+    <div className='flex justify-center'>
     <button className='font-bold text-yellow-100 text-[1rem] font-Harrington text-center z-[1] relative bottom-[8rem] bg-slate-900 border border-white px-4 py-2  hover:bg-brown-600 hover:text-yellow-200'> Mystic Essentials</button>
     <button className='font-bold text-yellow-100 text-[1rem] font-Harrington text-center z-[1] relative bottom-[8rem]  bg-slate-900 border border-white px-4 py-2  hover:bg-brown-600 hover:text-yellow-200'> Our Story</button>
+    
+    </div>
     
     </div>
     
