@@ -15,9 +15,20 @@ export default {
         'shadow-black': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
       },
       colors: {
-        headerColor: '#F2F2F2',
-        navigationColor: '#170206'
-      },
+        primary: '#6D38C4',  // Purple
+        secondary: '#F59E0B',  // Gold
+        accent: '#1F2937',  // Charcoal
+        background: '#111827',  // Dark Blue-Gray
+        text: '#F9FAFB',  // White
+        success: '#34D399',  // Green
+        danger: '#EF4444',  // Red
+        info: '#3B82F6',  // Blue
+        warning: '#FBBF24',  // Yellow
+        brown: {
+          500: '#8B4513', // Lighter brown
+          600: '#6D3811', // Darker brown
+        },
+},
       screens: {
         '3xl': '1920px'
       }
