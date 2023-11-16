@@ -1,9 +1,14 @@
 
 @font-face {
   font-family: 'Harrington';
-  src: url('../fonts/HARRINGT.TTF') format('truetype');
+  src: url('./fonts/HARRINGT.TTF') format('truetype');
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 767px) {
+  .Navbar.Collapse .NavbarText {
+    display: none;
+  }
+}
