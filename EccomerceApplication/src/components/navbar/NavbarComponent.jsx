@@ -36,7 +36,7 @@ const NavbarComponent = () => {
                 <a href=''>Reviews</a>
               </NavbarText>
               <Navbar.Text className=''>
-                <a href="#login">Mark Otto</a>
+                <a href="#login">Profile</a>
               </Navbar.Text>
             </div>
           )}
