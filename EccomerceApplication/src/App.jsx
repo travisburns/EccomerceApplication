@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
 import './App.css'
 import Home from './components/home/Home'
 import NavbarComponent from './components/navbar/NavbarComponent'
+import Product from './components/products/Product'
 
 
 
@@ -10,6 +11,12 @@ import NavbarComponent from './components/navbar/NavbarComponent'
 function App() {
   const [count, setCount] = useState(0)
 
+
+  const router = createBrowserRouter(createRoutesFromElements(
+    <Route>
+      <Route index element={<Home />}></Route>
+    </Route>
+  ))
   return (
     <>
     
@@ -17,6 +24,7 @@ function App() {
     <div className=' bg-gradient-to-b from-slate-950 to-slate-950  '>
     <NavbarComponent />
     <Home />
+    <Product />
 </div>
       
     </div>
