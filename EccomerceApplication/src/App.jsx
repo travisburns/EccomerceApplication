@@ -24,7 +24,7 @@ function App() {
     <div className=' bg-gradient-to-b from-slate-950 to-slate-950  '>
     <NavbarComponent />
     <Home />
-    <Product />
+    
 </div>
       
     </div>

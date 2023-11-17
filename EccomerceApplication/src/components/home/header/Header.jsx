@@ -4,7 +4,7 @@ import headeritem from './headerassets/header-item.png'
 
 const Header = () => {
   return (
-    <div className='mb-[3rem]'>
+    <div className='h-[65rem]'>
     <img src={headerImage} alt="" className='w-[100%] lg:h-[40rem] 3xl:w-[100%] 3xl:h-[50rem] relative z-[0]'/>
     <h1 className='text-4xl font-bold text-yellow-100 text-shadow-mdtext-white text-[2rem] font-Harrington text-center z-[1] relative  bottom-[10rem] sm:text-[3rem] sm:bottom-[20rem] md:text-[4rem] md:bottom-[24rem] xl:text-[5rem] 2xl:text-[7rem]  3xl:text-[8rem] 3xl:bottom-[28rem]'>Wiccan's Collection</h1>
     <div className='flex justify-center'>
