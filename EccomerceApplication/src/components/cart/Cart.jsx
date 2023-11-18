@@ -1,9 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux/es/hooks/useSelector'
+import { useSelector, useDispatch } from 'react-redux'
+import { remove } from '../../store/cartSlice'
 
 const Cart = () => {
   const products = useSelector(state => state.cart)
 
+  const dispatch = useDispatch()
+  const removeFromCart = (id) => {
+    dispatch(remove(id))
+  }
   
   const cards = products.map(product => (
         
@@ -22,7 +27,7 @@ const Cart = () => {
     <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white border border-[0.1] border-amber-100 bg-slate-900">${product.price}</p>
   <p class=" mr-2 text-base  font-medium text-gray-500 line-through dark:text-gray-300 border border-[0.1] border-amber-100 bg-slate-900">$25.00</p>
   <p class=" text-base font-medium text-green-500 border border-[0.1] border-amber-100 bg-slate-900">20% off</p>
-    <button className='ml-auto mr-2 text-lg font-semibold text-gray-900 dark:text-white border border-[0.1] border-amber-100 bg-slate-900' onClick={() => addToCart(product)}>Add</button>
+    <button className='ml-auto mr-2 text-lg font-semibold text-gray-900 dark:text-white border border-[0.1] border-amber-100 bg-slate-900 text-red-600' onClick={() => removeFromCart(product.id)}>Remove</button>
     </div>
   
 </div>
