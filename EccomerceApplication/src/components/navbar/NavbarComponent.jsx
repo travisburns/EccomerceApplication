@@ -1,55 +1,69 @@
-import React from
- 
-'react';
-import Container from
- 
-'react-bootstrap/Container';
-import Navbar from
- 
-'react-bootstrap/Navbar';
-import wiccanLogo from './navbarResources/wiccanCollectiveLogo.png';
-import NavbarText from 'react-bootstrap/esm/NavbarText';
-import { useMediaQuery } from 'react-responsive';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import 'font-awesome/css/font-awesome.min.css';
 
-const NavbarComponent = () => {
-  const isMdOrGreater = useMediaQuery({ query: '(min-width: 768px)' });
 
+
+
+const NavbarComponent = ({fixed}) => {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <div className='bg-gray-950'>
-      <Navbar className="bg-body-tertiary">
-        <Container className=' text-yellow-200 font-bold font-Harrington'>
-          <div className='flex'>
-          <Navbar.Brand href="#home" className='md:w-[30%]'>
-            <img className='w-[25%] sm:w-[35%] md:w-[40%] lg:w-[35%]' src={wiccanLogo} />
-          </Navbar.Brand>
-          <Navbar.Toggle />
-
-          {isMdOrGreater && (
-            <div className='flex flex-row gap-3 md:text-[1.5rem] md:relative md:top-[1.5rem] lg:text-[1.8rem] lg:top-[2rem] xl:text-[2.1rem] xl:top-[2.4rem] 2xl:text-[2.4rem] 2xl:top-[2.8rem] 3xl:top-[3.2rem] 3xl:text-[3.1rem]'>
-              <NavbarText className='text-yellow-200 font-bold font-Harrington'>
-                <a href='' className=''>About</a>
-              </NavbarText>
-              <NavbarText>
-                <a href=''>Our Shop</a>
-              </NavbarText>
-              <NavbarText>
-                <a href=''>Reviews</a>
-              </NavbarText>
-              <Navbar.Text className=''>
-                <a href="#login">Profile</a>
-              </Navbar.Text>
-            </div>
-          )}
+    <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gradient-to-t from-purple-700 to-purple-400">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <a
+              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              href="#pablo"
+            >
+              pink Tailwind Starter Kit
+            </a>
+            <button
+              className="text-white  cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+             <FontAwesomeIcon icon={faBars} />
+            </button>
           </div>
-          
+          <div
+            className={
+              "lg:flex flex-grow items-center" +
+              (navbarOpen ? " flex" : " hidden")
+            }
+            id="example-navbar-danger"
+          >
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#pablo"
+                >
+                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Share</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#pablo"
+                >
+                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Tweet</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#pablo"
+                >
+                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Pin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+  )
+}
 
-          <Navbar.Collapse className="justify-content-end">
-            {/* Other Navbar.Collapse content */}
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
-  );
-};
-
-export default NavbarComponent;
+export default NavbarComponent
