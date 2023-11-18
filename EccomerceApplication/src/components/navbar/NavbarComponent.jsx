@@ -23,11 +23,11 @@ const NavbarComponent = ({fixed}) => {
             </NavLink>
            
             <button
-              className="text-white  cursor-pointer text-xl leading-none px-3  border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className=" text-white  cursor-pointer text-xl leading-none px-3  border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-             <FontAwesomeIcon icon={faBars} bounce />
+             <FontAwesomeIcon icon={faBars} bounce className='text-3xl' />
             </button>
           </div>
           <div
