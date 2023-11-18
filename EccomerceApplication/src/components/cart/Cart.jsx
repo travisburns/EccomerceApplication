@@ -41,7 +41,7 @@ const Cart = () => {
 
   return (
     <>
-    <h1 className='text-Herrington text-[5rem] text-white'>Your Craft</h1>
+    <h1 className='text-Herrington text-[2.5rem] ml-[2rem] font-Harrington text-white'>Your Craft</h1>
     {cards}
 
     </>
