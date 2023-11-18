@@ -13,7 +13,7 @@ const NavbarComponent = ({fixed}) => {
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className="relative flex flex-wrap items-center justify-between px-2  bg-gradient-to-t from-black to-purple-700 " >
+    <nav className="relative flex flex-wrap items-center justify-between px-2   bg-stone-950/75 " >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between text-8 ">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink to="/">
@@ -21,7 +21,7 @@ const NavbarComponent = ({fixed}) => {
               className="text-sm font-bold leading-relaxed inline-block mr-4  whitespace-nowrap uppercase text-white"
               href="#pablo"
             >
-             <img src={wiccanCollective} alt=""  className='w-[40%]'/>
+             <img src={wiccanCollective} alt=""  className='w-[40%] 3xl:w-[18%]'/>
             </a>
             </NavLink>
            

@@ -14,7 +14,7 @@ const Cart = () => {
         
 
     <div className='' key={product.id}>
-        <div  class="mx-auto mt-11 w-80 transform overflow-hidden  bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg w-[25%]">
+        <div  class="mx-auto mt-11  transform overflow-hidden  bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg w-[75%] 3xl:w-[25%]">
 <img class="h-48 md:h-80 w-full object-cover object-center border border-[0.1] border-amber-100" src={product.image} alt="Product Image" />
 <div class=" font-Harrington">
 <div className='border border-[0.1] border-amber-100'>
