@@ -4,10 +4,13 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import 'font-awesome/css/font-awesome.min.css';
 import wiccanCollective from './navbarResources/wiccanCollectiveLogo.png'
 import { NavLink } from 'react-router-dom';
-
+import {  useSelector } from 'react-redux/es/hooks/useSelector';
 
 
 const NavbarComponent = ({fixed}) => {
+  const cartProducts = useSelector(state => state.cart)
+
+
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <nav className="relative flex flex-wrap items-center justify-between px-2  bg-gradient-to-t from-black to-purple-700 " >
@@ -63,7 +66,7 @@ const NavbarComponent = ({fixed}) => {
                   className="px-3  flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className=" text-lg leading-lg text-white opacity-75"></i><span className="ml-2 text-[1.7rem] font-Harrington">Bag</span>
+                  <i className=" text-lg leading-lg text-white opacity-75"></i><span className="ml-2 text-[1.7rem] font-Harrington">Bag {cartProducts.length} </span>
                 </a>
               </li>
               </NavLink>
