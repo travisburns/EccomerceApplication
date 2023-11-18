@@ -26,7 +26,7 @@ const Product = () => {
         <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white border border-[0.1] border-amber-100 bg-slate-900">${product.price}</p>
       <p class=" mr-2 text-base  font-medium text-gray-500 line-through dark:text-gray-300 border border-[0.1] border-amber-100 bg-slate-900">$25.00</p>
       <p class=" text-base font-medium text-green-500 border border-[0.1] border-amber-100 bg-slate-900">20% off</p>
-        <button className='ml-auto mr-2 text-lg font-semibold text-gray-900 dark:text-white border border-[0.1] border-amber-100 bg-slate-900'>View</button>
+        <button className='ml-auto mr-2 text-lg font-semibold text-gray-900 dark:text-white border border-[0.1] border-amber-100 bg-slate-900'>Add</button>
         </div>
       
     </div>
