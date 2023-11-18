@@ -17,6 +17,7 @@ function App() {
     <Route path='/' element={<RootLayout />}>
 
       <Route index element={<Home />}></Route>
+      <Route path='/products' element={<Product />}> </Route>
       <Route path="/cart" element={<Cart />}></Route>
     </Route>
   ))
