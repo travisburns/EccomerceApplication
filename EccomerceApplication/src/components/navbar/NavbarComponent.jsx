@@ -10,8 +10,8 @@ import { NavLink } from 'react-router-dom';
 const NavbarComponent = ({fixed}) => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className="relative flex flex-wrap items-center justify-between px-2  bg-gradient-to-t from-black to-purple-700">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <nav className="relative flex flex-wrap items-center justify-between px-2  bg-gradient-to-t from-black to-purple-700 " >
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between text-8 ">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink to="/">
             <a
@@ -39,12 +39,12 @@ const NavbarComponent = ({fixed}) => {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <NavLink to="/products">
-              <li className="nav-item">
+              <li className="nav-item ">
                 <a
                   className="px-3  flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Products</span>
+                  <i className="text-lg leading-lg text-white opacity-75"></i><span className="ml-2 text-[1.7rem] font-Harrington">Products</span>
                 </a>
               </li>
               </NavLink>
@@ -54,17 +54,20 @@ const NavbarComponent = ({fixed}) => {
                   className="px-3  flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className=" text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Tweet</span>
+                  <i className=" text-lg leading-lg text-white opacity-75"></i><span className="ml-2 text-[1.7rem] font-Harrington">Tweet</span>
                 </a>
               </li>
+              <NavLink to="/cart">
               <li className="nav-item">
                 <a
                   className="px-3  flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className=" text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Pin</span>
+                  <i className=" text-lg leading-lg text-white opacity-75"></i><span className="ml-2 text-[1.7rem] font-Harrington">Bag</span>
                 </a>
               </li>
+              </NavLink>
+              
             </ul>
           </div>
         </div>
