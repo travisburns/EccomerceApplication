@@ -13,6 +13,8 @@ const Product = () => {
 
     }, []);
 
+
+    
     const addToCart = (product) => {
         dispatch(add(product))
     }

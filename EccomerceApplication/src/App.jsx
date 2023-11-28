@@ -6,6 +6,7 @@ import NavbarComponent from './components/navbar/NavbarComponent'
 import Product from './components/products/Product'
 import Cart from './components/cart/Cart'
 import RootLayout from './components/RootLayout'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -32,7 +33,7 @@ function App() {
 </div>
       
     </div>
-    
+    <Footer />
     </>
   )
 
