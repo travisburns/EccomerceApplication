@@ -3,10 +3,11 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } 
 import './App.css'
 import Home from './components/home/Home'
 import NavbarComponent from './components/navbar/NavbarComponent'
-import Product from './components/products/Product'
+import Product from './components/products/ProductList'
 import Cart from './components/cart/Cart'
 import RootLayout from './components/RootLayout'
 import Footer from './components/Footer/Footer'
+import ProductList from './components/products/ProductList'
 
 
 
@@ -18,7 +19,7 @@ function App() {
     <Route path='/' element={<RootLayout />}>
 
       <Route index element={<Home />}></Route>
-      <Route path='/products' element={<Product />}> </Route>
+      <Route path='/products' element={<ProductList />}> </Route>
       <Route path="/cart" element={<Cart />}></Route>
     </Route>
   ))

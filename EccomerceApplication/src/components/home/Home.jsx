@@ -3,7 +3,7 @@ import Header from './header/Header'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProducts } from '../../store/ProductSlice';
 import Category from '../categorypage/CategoryPage';
-import ProductList from '../products/Product';
+import ProductList from '../products/ProductList.jsx';
 import { fetchCategories, fetchProductsByCategory} from '../../store/categorySlice.jsx'
 import SingleCategory from '../singleCategory/SingleCategory.jsx';
 // import BestSellers from './bestsellers/BestSellers'

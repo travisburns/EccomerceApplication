@@ -13,23 +13,24 @@ const Category = ({ categories, status, }) => {
     console.log(categories);
 
   return (
-    <section className='categories  text-center bg-ghost-white w-[100%]' id = 'categories'>
-        <div className=''>
-            <div className='categories-content'>
-                <div className='section-title'>
-                    <h3 className='text-white font-Harrington 2xl:text-[9rem]'>Category</h3>
+    <section className='categories  text-center px-8' id = 'categories'>
+       
+        <div className='section-title'>
+            
+                
+                    <h3 className='text-yellow-100 font-Harrington text-[3rem] 2xl:text-[9rem] pb-10'>Categories</h3>
+                
                 </div>
-
-                <div className='category-items flex w-[90%] ml-[4.4rem]'>
+                <div className='category-items flex flex-wrap justify-between w-[100%]'>
                     {
                         categories.slice(0, 5).map(category =>  (
-                            <Link to={`category/${category.id}`} key = {categories.id}>
+                            <Link to={`category/${category.id}`} key = {categories.id} className='w-[46%] mb-6'>
                                 <div className='category-item '>
                                     <div className='category-item-img '>
-                                        <img src = {category.image} alt= "" />
+                                        <img src = {category.image} alt= "" className='max-h-80 ' />
                                     </div>
-                                    <div className='category-item-name text-center'>
-                                        <h6 className='text-white font-Harrington 2xl:text-[5rem]'>{category.name}</h6>
+                                    <div className='category-item-name text-center '>
+                                        <h6 className='text-yellow-100 font-Harrington text-[1.5rem] 2xl:text-[3rem] bg-violet-700'>{category.name}</h6>
                                     </div>
                                 </div>
                             </Link>
@@ -37,8 +38,8 @@ const Category = ({ categories, status, }) => {
                     }
                 </div>
 
-            </div>
-        </div>
+            
+ 
     </section>
   )
 }
