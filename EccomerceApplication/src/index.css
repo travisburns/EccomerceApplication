@@ -7,8 +7,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 767px) {
-  .Navbar.Collapse .NavbarText {
-    display: none;
-  }
-}

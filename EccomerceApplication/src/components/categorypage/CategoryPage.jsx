@@ -13,14 +13,14 @@ const Category = ({ categories, status, }) => {
     console.log(categories);
 
   return (
-    <section className='categories py-5 bg-ghost-white' id = 'categories'>
-        <div className='container'>
+    <section className='categories  text-center bg-ghost-white w-[100%]' id = 'categories'>
+        <div className=''>
             <div className='categories-content'>
                 <div className='section-title'>
                     <h3 className='text-white font-Harrington 2xl:text-[9rem]'>Category</h3>
                 </div>
 
-                <div className='category-items flex '>
+                <div className='category-items flex w-[90%] ml-[4.4rem]'>
                     {
                         categories.slice(0, 5).map(category =>  (
                             <Link to={`category/${category.id}`} key = {categories.id}>

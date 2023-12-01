@@ -51,7 +51,7 @@ const SingleProduct = () => {
   return (
     <div className='overlay-bg' onClick = {modalOverlayHandler}>
       <div className = "product-details-modal bg-white">
-        <button type = "button" className='modal-close-btn flex flex-center fs-14' onClick={() => dispatch(setIsModalVisible(false))}>
+        <button type = "button" className='modal-close-btn flex flex-center' onClick={() => dispatch(setIsModalVisible(false))}>
           <i className = "fas fa-times"></i>
         </button>
         <div className = "details-content grid">
@@ -64,11 +64,11 @@ const SingleProduct = () => {
           {/* detials right */}
           <div className='details-left'>
             <div className = "details-info">
-              <h3 className = "title text-regal-blue fs-22 fw-5">{product.title}</h3>
-              <p className='description text-pine-green'>{product.description}</p>
-              <div className='price fw-7 fs-24'>Price: {formatPrice(product.price)}</div>
+              <h3 className = "title text-white font-Harrington text-[3rem]">{product.title}</h3>
+              <p className='description '>{product.description}</p>
+              <div className='price '>Price: {formatPrice(product.price)}</div>
               <div className = "qty flex">
-                <span className = "text-light-blue qty-text">Qty: </span>
+                <span className = "text-light-blue ">Qty: </span>
                 <div className = "qty-change flex">
                   <button type = "button" className='qty-dec fs-14' onClick={() => decreaseQty()}>
                     <i className = "fas fa-minus text-light-blue"></i>

@@ -24,28 +24,28 @@ const ProductList = ({products, status}) => {
 
   return (
     <div>
-      <section className='product py-5 bg-ghost-white' id = "products">
+      <section className='product py-5 bg-ghost-white flex flex-1' id = "products">
         {isModalVisible && <SingleProduct />}
 
         <div className='container'>
           <div className='product-content'>
             <div className='section-title'>
-              <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>
+              <h3 className='text-white font-Harrington text-[9rem]'>
                 Our Products
               </h3>
             </div>
-            <div className='product-items grid'>
+            <div className='product-items flex flex-wrap'>
               {
             products.map(product => (
-                          <div className='mx-auto mt-11 w-80 transform overflow-hidden  bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg w-[80%]' key = {product.id}
+                          <div className=' ' key = {product.id}
                           onClick={() => viewModalHandler(product)}>
                           <div className=''>
                               <img src = {product.images[0]} alt = "" />
-                              <div className = "product-item-cat text-white fs-13 text-uppercase bg-gold fw-6">{product.category.name}</div>
+                              <div className = "product-item-cat text-white font-Harrington text-[7rem]">{product.category.name}</div>
                           </div>
                           <div className='product-item-body'>
-                              <h6 className = "product-item-title text-pine-green fw-4 fs-15">{product.title}</h6>
-                              <div className = "product-item-price text-regal-blue fw-7 fs-18">{formatPrice(product.price)}</div>
+                              <h6 className = "product-item-title ">{product.title}</h6>
+                              <div className = "product-item-price ">{formatPrice(product.price)}</div>
                           </div>
                       </div>
                                
