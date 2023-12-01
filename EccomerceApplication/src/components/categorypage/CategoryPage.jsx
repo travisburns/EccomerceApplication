@@ -18,7 +18,7 @@ const Category = ({ categories, status, }) => {
         <div className='section-title'>
             
                 
-                    <h3 className='text-yellow-100 font-Harrington text-[3rem] 2xl:text-[9rem] pb-10'>Categories</h3>
+                    <h3 className='text-yellow-100 font-Harrington text-[3rem] lg:text-[6rem] 2xl:text-[9rem] pb-10'>Categories</h3>
                 
                 </div>
                 <div className='category-items flex flex-wrap justify-between md:justify-center w-[100%]'>
@@ -30,7 +30,7 @@ const Category = ({ categories, status, }) => {
                                         <img src = {category.image} alt= "" className='max-h-80 ' />
                                     </div>
                                     <div className='category-item-name text-center '>
-                                        <h6 className='text-yellow-100 font-Harrington text-[1.5rem] 2xl:text-[3rem] bg-violet-700 w-[96.8%] lg:w-[100%] xl:w-[90.9%] 2xl:w-[75%] '>{category.name}</h6>
+                                        <h6 className='text-yellow-100 font-Harrington text-[1.5rem] 2xl:text-[3rem] bg-violet-700 w-[100%] md:w-[96.6%] lg:w-[100%] xl:w-[90.9%] 2xl:w-[75%] '>{category.name}</h6>
                                     </div>
                                 </div>
                             </Link>
