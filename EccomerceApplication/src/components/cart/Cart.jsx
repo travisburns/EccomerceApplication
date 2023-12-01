@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { remove } from '../../store/cartSlice'
+import { removeFromCart } from '../../store/cartSlice'
 
 const Cart = () => {
   const products = useSelector(state => state.cart)
 
   const dispatch = useDispatch()
   const removeFromCart = (id) => {
-    dispatch(remove(id))
+    dispatch(removeFromCart(id))
   }
   
   const cards = products.map(product => (
