@@ -24,13 +24,13 @@ const Category = ({ categories, status, }) => {
                 <div className='category-items flex flex-wrap justify-between md:justify-center w-[100%]'>
                     {
                         categories.slice(0, 5).map(category =>  (
-                            <Link to={`category/${category.id}`} key = {categories.id} className='w-[46%] md:w-[47%] mb-6'>
+                            <Link to={`category/${category.id}`} key = {categories.id} className='w-[46%] md:w-[47%] lg:w-[29%] lg:mr-[1rem] mb-6'>
                                 <div className='category-item '>
                                     <div className='category-item-img '>
                                         <img src = {category.image} alt= "" className='max-h-80 ' />
                                     </div>
                                     <div className='category-item-name text-center '>
-                                        <h6 className='text-yellow-100 font-Harrington text-[1.5rem] 2xl:text-[3rem] bg-violet-700 w-[96.8%]'>{category.name}</h6>
+                                        <h6 className='text-yellow-100 font-Harrington text-[1.5rem] 2xl:text-[3rem] bg-violet-700 w-[96.8%] lg:w-[100%]'>{category.name}</h6>
                                     </div>
                                 </div>
                             </Link>
