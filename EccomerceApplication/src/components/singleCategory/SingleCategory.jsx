@@ -23,32 +23,33 @@ const SingleCategory = ({products, status}) => {
     if(status === STATUS.ERROR) return (<Error />);
     if(status === STATUS.LOADING) return (<Loader />)
   return (
-    <section className='cat-single py-5 bg-ghost-white'>
-      <div className='container'>
-        <div className='cat-single-content'>
-            <div className='section-title'>
-                <h3 className='text-uppercase '>{products[0].category.name}</h3>
-                <div className='product-items '>
+    <section className='cat-single py-5 px-8 bg-ghost-white '>
+      
+       
+        <h3 className='text-uppercase font-Harrington text-yellow-100 text-[3.2rem]  '>{products[0].category.name}</h3>
+            <div className='flex flex-wrap justify-between md:justify-center '>
+                
+                
                     {
                         products.map(product => (
-                          <div className='product-item' key = {product.id}
+                          <div className='product-item font-Harrington text-yellow-100 mb-5 w-[45%]' key = {product.id}
                           onClick={() => viewModalHandler(product)}>
-                          <div className='product-item-img'>
+                          <div className='product-item-img '>
                               <img src = {product.images[0]} alt = "" />
-                              <div className = "product-item-cat text-white ">{product.category.name}</div>
+                             
                           </div>
-                          <div className='product-item-body'>
-                              <h6 className = "product-item-title t">{product.title}</h6>
-                              <div className = "product-item-price ">{formatPrice(product.price)}</div>
+                          <div className='product-item-body bg-violet-900'>
+                              <h6 className = "product-item-title text-[1.5rem]">{product.title}</h6>
+                              <div className = "product-item-price text-[1.3rem]">{formatPrice(product.price)}</div>
                           </div>
                       </div>
                                
                         ))
                     }
-                </div>
+               
             </div>
-        </div>
-      </div>
+        
+ 
     </section>
   )
 }
