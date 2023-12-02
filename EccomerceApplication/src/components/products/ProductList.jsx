@@ -37,11 +37,11 @@ const ProductList = ({products, status}) => {
                                         <img src = {product.images[0]} alt = "" className='w-[100%] min-h-[10rem]'/>
                                       
                                    
-                                    <div className='product-item-body bg-violet-900 text-white font-Harrington text-[1.4rem]'>
-                                    <h6 className = "product-item-title text-pine-green bg-yellow-100 text-black fw-4 fs-15">{product.title}</h6>
-                                    <div className = "product-item-cat text-black font-bold  font-Harrington text-[1.6rem] fs-13 text-uppercase bg-gold fw-6">{product.category.name}</div>
+                                    <div className='product-item-body bg-violet-900 text-center text-white font-Harrington text-[1.4rem] sm:text-[2.2rem]'>
+                                    <h6 className = "product-item-title text-pine-green bg-yellow-100 text-black fw-4 fs-15 sm:text-[2.2rem] lg:text-[3rem] 2xl:text-[5rem]">{product.title}</h6>
+                                    <div className = "product-item-cat text-black font-bold  font-Harrington text-[1.6rem] sm:text-[1.8rem] lg:text-[2.6rem] 2xl:text-[3.5rem] fs-13 text-uppercase bg-gold fw-6 ">{product.category.name}</div>
                                         
-                                        <div className = "product-item-price text-green-500 fw-7 fs-18">{formatPrice(product.price)}</div>
+                                        <div className = "product-item-price text-green-500 fw-7 fs-18 sm:text-[1.8rem] lg:text-[2.4rem] 2xl:text-[3rem]">{formatPrice(product.price)}</div>
                                         
                                     </div>
                                 </div>
