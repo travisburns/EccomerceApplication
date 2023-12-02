@@ -21,7 +21,7 @@ const NavbarComponent = ({fixed}) => {
               className="text-sm font-bold leading-relaxed inline-block mr-4  whitespace-nowrap uppercase text-yellow-100"
               href="#pablo"
             >
-             <img src={wiccanCollective} alt=""  className='w-[25%] 3xl:w-[25%]'/>
+             <img src={wiccanCollective} alt=""  className='w-[25%] '/>
             </a>
             </NavLink>
            

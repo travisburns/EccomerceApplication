@@ -18,7 +18,7 @@ const Category = ({ categories, status, }) => {
         <div className='section-title'>
             
                 
-                    <h3 className='text-yellow-100 font-Harrington text-[3rem] lg:text-[6rem] 2xl:text-[9rem] pb-10'>Categories</h3>
+                    <h3 className='text-yellow-100 font-Harrington text-[3rem] md:text-[4rem] lg:text-[6rem] 2xl:text-[12rem] 3xl:text-[24rem] pb-10'>Categories</h3>
                 
                 </div>
                 <div className='category-items flex flex-wrap justify-between md:justify-center w-[100%]'>

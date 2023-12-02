@@ -5,30 +5,23 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+       '3xl': '1920px'
+    },
     extend: {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         Lato: ["Lato", "sans-serif"],
         Harrington: ["Harrington", 'serif']
       },
-      boxShadow: {
-        'shadow-black': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      },
-      colors: {
-        primary: '#6D38C4',  // Purple
-        secondary: '#F59E0B',  // Gold
-        accent: '#1F2937',  // Charcoal
-        background: '#111827',  // Dark Blue-Gray
-        text: '#F9FAFB',  // White
-        success: '#34D399',  // Green
-        danger: '#EF4444',  // Red
-        info: '#3B82F6',  // Blue
-        warning: '#FBBF24',  // Yellow
-        
-},
-      screens: {
-        '3xl': '1920px'
-      }
+      
+     
+     
     },
   },
   plugins: [],
